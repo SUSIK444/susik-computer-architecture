@@ -94,3 +94,22 @@ footer {
 .pagination a:hover {
   background: #1e3799;
 }
+/* Добавляем фон и канвас для анимации */
+body, html {
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2c3e50, #bdc3c7); /* романтичный градиент */
+  color: #fff;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
