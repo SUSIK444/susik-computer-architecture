@@ -1,75 +1,33 @@
+<script> // здесь код three.js для анимации </script>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Название сайта</title>
+  <meta charset="UTF-8">
+  <title>Мой сайт</title>
   <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
-</head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SUSIK Computer Architecture</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    html, body {
+      margin: 0; padding: 0; overflow: hidden; height: 100%;
+      background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    #bg-container {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
   <div id="bg-container"></div>
+  
+  <h1>Добро пожаловать!</h1>
+  <p>Это романтичный 3D фон 💖</p>
 
-  <!-- Здесь основной контент твоего сайта -->
-</body>
-
-<header>
-  <h1>SUSIK Computer Architecture</h1>
-  <p>Онлайн‑учебник по компьютерной архитектуре</p>
-</header>
-
-<nav>
-  <a href="glava1.html">История</a>
-  <a href="glava2.html">CPU</a>
-  <a href="glava3.html">Память</a>
-  <a href="glava4.html">Ввод/Вывод</a>
-  <a href="glava5.html">Современные системы</a>
-</nav>
-
-<div class="container">
-  <h2>Добро пожаловать!</h2>
-  <p>Этот сайт посвящён <b>Computer Architecture</b>.  
-  Здесь ты найдёшь главы с картинками и объяснениями:  
-  от истории компьютеров до современных процессоров.</p>
-
-  <h3>Оглавление:</h3>
-  <ol>
-    <li><a href="glava1.html">История компьютеров</a></li>
-    <li><a href="glava2.html">Центральный процессор (CPU)</a></li>
-    <li><a href="glava3.html">Память</a></li>
-    <li><a href="glava4.html">Ввод и вывод</a></li>
-    <li><a href="glava5.html">Современные архитектуры</a></li>
-  </ol>
-</div>
-
-<footer>
-  © 2025 SUSIK Computer Architecture
-</footer>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-      if (
-        link.hostname === window.location.hostname &&
-        !link.hash &&
-        !link.target
-      ) {
-        link.addEventListener('click', e => {
-          e.preventDefault();
-          document.body.classList.add('fade-out');
-          const href = link.href;
-          setTimeout(() => {
-            window.location = href;
-          }, 600);
-        });
-      }
-    });
-  });
-</script>
+  <script>
+    // здесь код three.js для анимации
+  </script>
 </body>
 </html>
